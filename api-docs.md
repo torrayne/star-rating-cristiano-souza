@@ -79,7 +79,7 @@ Response:
 
 ------------
 
-`PUT /api/rating/:ratingId` (example `/api/rating/clc024i1q000008l599wb09ry`)
+`PUT /api/ratings/:ratingId` (example `/api/ratings/clc024i1q000008l599wb09ry`)
 Updates an existing rating
 Request body:
 ```json
