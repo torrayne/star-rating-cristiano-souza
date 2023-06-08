@@ -3,10 +3,15 @@ import "./styles.css";
 import { Header } from "./components/Header";
 import { Info } from "./components/Info";
 import { Image } from "./components/Image";
+import axios from 'axios';
+import { StarRatings } from './components/StarRating';
 
 // you can use these star characters ★ & ☆
 
 export default function App(props) {
+  console.log(props)
+  // fetch
+  // axios
   return (
     <div className="App">
       <div className="product-modal">
@@ -15,7 +20,7 @@ export default function App(props) {
           <Image />
           <Info />
         </div>   
-        {/* Make a star rating component! */}
+        <StarRatings productId={props.productId} />
       </div>
     </div>
   );
